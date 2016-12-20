@@ -17,6 +17,8 @@ MAINTAINER Saulo Alves Aflitos <sauloal@gmail.com>
 
 RUN conda install bwa=0.7.12
 
+USER root
+
 WORKDIR /data/
 
 ENTRYPOINT ["bwa"]
